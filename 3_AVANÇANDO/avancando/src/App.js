@@ -11,6 +11,7 @@ import ListRender from "./components/ListRender";
 import ManageData from "./components/ManageData";
 import MessageState from "./components/MessageState";
 import ShowUserName from "./components/ShowUserName";
+import Challenge from "./components/Challenge";
 
 function App() {
   const cars = [
@@ -70,6 +71,7 @@ function App() {
       {/* state lift */}
       <MessageState msg={message} />
       <ChangeMessageState handleMessage={handleMessage} />
+      <Challenge />
     </div>
   );
 }
